@@ -11,7 +11,7 @@ const gradeColor = (v) => {
 }
 
 export default function SemesterCard({ semester, onChange }) {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const subjectAvgs = semester.subjects.map(s =>
     s.assessments.reduce((sum, a) => {
